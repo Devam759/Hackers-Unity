@@ -2,74 +2,92 @@
 
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const sponsors = [
-  { name: "Google", logo: "🔍" },
-  { name: "Microsoft", logo: "🪟" },
-  { name: "Hoko Ice Cream", logo: "🍦" },
+  { name: "Microsoft", logo: "/sponsors/Microsoft.png" },
+  { name: "Google", logo: "/sponsors/google.webp" },
+  { name: "Hocco Ice Cream", logo: "/sponsors/hocco.jpeg" },
 ];
 
 export default function Sponsors() {
   return (
-    <section id="sponsors" className="py-20 md:py-28 bg-gray-800/50">
+    <section id="sponsors" className="py-12 md:py-16 bg-black">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20 xl:px-32">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="heading-lg mb-4 text-white">
-            Our Sponsors
-          </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <motion.h2 
+            className="text-4xl md:text-5xl font-bold mb-4 font-heading tracking-tight uppercase"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <span className="bg-gradient-to-r from-primary-400 via-accent-500 to-primary-600 bg-clip-text text-transparent">
+              Our Sponsors
+            </span>
+          </motion.h2>
+          <motion.div
+            className="h-1 w-24 bg-gradient-to-r from-primary-500 to-accent-600 mx-auto mb-6 rounded-full"
+            initial={{ width: 0 }}
+            whileInView={{ width: 96 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          />
+          <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
             Proud partners who support our mission and community
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="flex flex-wrap justify-center items-center gap-16 md:gap-20 mb-12">
           {sponsors.map((sponsor, index) => (
             <motion.div
               key={sponsor.name}
-              className="bg-gray-800 rounded-2xl p-12 border border-gray-700 hover:border-primary-500 transition-all duration-300 flex flex-col items-center justify-center text-center group"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="relative cursor-pointer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
+              whileHover={{ scale: 1.15 }}
+              animate={{ scale: 1 }}
             >
-              <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">
-                {sponsor.logo}
-              </div>
-              <h3 className="text-2xl font-bold text-white">
-                {sponsor.name}
-              </h3>
+              <Image
+                src={sponsor.logo}
+                alt={sponsor.name}
+                width={280}
+                height={120}
+                className="object-contain h-28 w-auto"
+                style={{ maxWidth: '280px' }}
+              />
             </motion.div>
           ))}
         </div>
 
         {/* Become a Sponsor CTA */}
         <motion.div
-          className="bg-gradient-primary rounded-2xl p-12 text-center"
+          className="bg-black/50 border border-gray-900 rounded-xl p-8 md:p-12 text-center backdrop-blur-sm"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-3xl font-bold text-white mb-4">
+          <h3 className="text-2xl md:text-3xl font-semibold text-white mb-3">
             Become a Sponsor
           </h3>
-          <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-            Support our community and gain visibility among tech enthusiasts and innovators. 
-            Reach out to explore sponsorship opportunities.
+          <p className="text-gray-400 text-base md:text-lg mb-6 max-w-2xl mx-auto">
+            Support our community and gain visibility among tech enthusiasts and innovators.
           </p>
           <a
             href="mailto:hackerunity.community@gmail.com"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-700 font-bold rounded-lg hover:scale-105 transition-transform"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white font-medium rounded-lg transition-all border border-gray-800 hover:border-gray-700"
           >
             Contact Us
-            <ArrowRightIcon className="h-5 w-5" />
+            <ArrowRightIcon className="h-4 w-4" />
           </a>
         </motion.div>
       </div>

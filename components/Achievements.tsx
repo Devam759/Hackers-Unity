@@ -37,10 +37,10 @@ const achievements = [
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="py-20 md:py-28 bg-gray-900">
+    <section id="achievements" className="py-12 md:py-16 bg-black">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20 xl:px-32">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -58,7 +58,7 @@ export default function Achievements() {
           {achievements.map((achievement, index) => (
             <motion.div
               key={achievement.title}
-              className="text-center p-8 bg-gray-800 rounded-2xl border border-gray-700 hover:border-primary-500 transition-all duration-300 group"
+              className="text-center p-8 bg-black rounded-2xl border border-gray-800 hover:border-primary-500 transition-all duration-300 group"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

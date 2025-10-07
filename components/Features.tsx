@@ -30,10 +30,10 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 md:py-28 bg-gray-900">
+    <section id="features" className="py-12 md:py-16 bg-black">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20 xl:px-32">
         <motion.div
-          className="max-w-3xl mb-16"
+          className="max-w-3xl mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

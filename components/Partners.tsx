@@ -1,133 +1,144 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowTopRightOnSquareIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const communityPartners = [
-  { name: "Blockseblock", description: "Web3 and blockchain community" },
-  { name: "BlockOn", description: "Decentralized innovation network" },
+  { name: "Blockseblock", logo: "/community parteners/blockseblock.jpg" },
+  { name: "BlockOn", logo: "/community parteners/blockon.png" },
 ];
 
 const corporatePartners = [
-  {
-    name: "Nextease Solutions",
-    description: "Leading software development and IT consulting firm specializing in innovative solutions.",
-    website: "#",
-  },
-  {
-    name: "DMV Technologies",
-    description: "Pioneering research and development in emerging technologies and AI solutions.",
-    website: "#",
-  },
+  { name: "Nextease Solutions", logo: "/corporate partners/nexteasesolutions.jpg" },
+  { name: "DMV Technologies", logo: "/corporate partners/dmetech.jpeg" },
 ];
 
 export default function Partners() {
   return (
-    <section id="partners" className="py-20 md:py-28 bg-gray-900">
+    <section id="partners" className="py-12 md:py-16 bg-black">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20 xl:px-32">
+        {/* Community Partners */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="heading-lg mb-4 text-white">
-            Community Partners
-          </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <motion.h2 
+            className="text-4xl md:text-5xl font-bold mb-4 font-heading tracking-tight uppercase"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <span className="bg-gradient-to-r from-primary-400 via-accent-500 to-primary-600 bg-clip-text text-transparent">
+              Community Partners
+            </span>
+          </motion.h2>
+          <motion.div
+            className="h-1 w-24 bg-gradient-to-r from-primary-500 to-accent-600 mx-auto mb-6 rounded-full"
+            initial={{ width: 0 }}
+            whileInView={{ width: 96 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          />
+          <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
             Organizations that collaborate with us to build a stronger tech community
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="flex flex-wrap justify-center items-center gap-16 md:gap-20 mb-20">
           {communityPartners.map((partner, index) => (
             <motion.div
               key={partner.name}
-              className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-primary-500 transition-all duration-300"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              className="relative cursor-pointer transition-all duration-300"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.2 }}
             >
-              <h3 className="text-2xl font-bold text-white mb-2">
-                {partner.name}
-              </h3>
-              <p className="text-gray-400">
-                {partner.description}
-              </p>
+              <Image
+                src={partner.logo}
+                alt={partner.name}
+                width={280}
+                height={120}
+                className="object-contain h-28 w-auto"
+                style={{ maxWidth: '280px' }}
+              />
             </motion.div>
           ))}
         </div>
 
         {/* Corporate Partners */}
         <motion.div
-          className="mb-12"
+          className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-3xl font-bold text-white mb-4 text-center">
-            Corporate Partners
-          </h3>
-          <p className="text-gray-300 text-center mb-12">
+          <motion.h2 
+            className="text-4xl md:text-5xl font-bold mb-4 font-heading tracking-tight uppercase"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <span className="bg-gradient-to-r from-primary-400 via-accent-500 to-primary-600 bg-clip-text text-transparent">
+              Corporate Partners
+            </span>
+          </motion.h2>
+          <motion.div
+            className="h-1 w-24 bg-gradient-to-r from-primary-500 to-accent-600 mx-auto mb-6 rounded-full"
+            initial={{ width: 0 }}
+            whileInView={{ width: 96 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          />
+          <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
             Strategic collaborations that drive innovation and growth in our community
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="flex flex-wrap justify-center items-center gap-16 md:gap-20 mb-12">
           {corporatePartners.map((partner, index) => (
             <motion.div
               key={partner.name}
-              className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-primary-500 transition-all duration-300"
-              initial={{ opacity: 0, y: 30 }}
+              className="relative cursor-pointer transition-all duration-300"
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.2 }}
             >
-              <h3 className="text-2xl font-bold text-white mb-3">
-                {partner.name}
-              </h3>
-              <p className="text-gray-300 mb-6">
-                {partner.description}
-              </p>
-              <a
-                href={partner.website}
-                className="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 font-semibold transition-colors"
-              >
-                Visit Website
-                <ArrowTopRightOnSquareIcon className="h-5 w-5" />
-              </a>
+              <Image
+                src={partner.logo}
+                alt={partner.name}
+                width={280}
+                height={120}
+                className="object-contain h-28 w-auto"
+                style={{ maxWidth: '280px' }}
+              />
             </motion.div>
           ))}
         </div>
 
-        {/* Become a Partner CTA */}
+        {/* Contact Line */}
         <motion.div
-          className="bg-gray-800 rounded-2xl p-12 border border-gray-700 text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          className="text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <h3 className="text-3xl font-bold text-white mb-4">
-            Become a Partner
-          </h3>
-          <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Join forces with Hacker&apos;s Unity to drive innovation and create meaningful impact 
-            in the tech ecosystem. We offer tailored partnership opportunities for companies of all sizes.
-          </p>
-          <a
-            href="mailto:hackerunity.community@gmail.com"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-lg transition-colors"
-          >
-            Partner With Us
-            <ArrowRightIcon className="h-5 w-5" />
-          </a>
-          <p className="text-gray-400 text-sm mt-6">
+          <p className="text-gray-400 text-base">
             Interested in becoming a sponsor or partner? Email us at{" "}
-            <a href="mailto:hackerunity.community@gmail.com" className="text-primary-400 hover:underline">
+            <a 
+              href="mailto:hackerunity.community@gmail.com" 
+              className="text-primary-400 hover:text-primary-300 transition-colors font-medium"
+            >
               hackerunity.community@gmail.com
             </a>
           </p>

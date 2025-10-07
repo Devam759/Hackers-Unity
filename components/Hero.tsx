@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRightIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
 import Particles from "./Particles";
+import TextType from "./TextType";
 
 export default function Hero() {
   return (
@@ -13,7 +14,7 @@ export default function Hero() {
       {/* Animated Particles Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Subtle gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/50 to-gray-900/70 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black/70 pointer-events-none" />
       </div>
       
       {/* Interactive Particles Layer */}
@@ -51,13 +52,21 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="heading-xl mb-6">
-            <span className="block text-white">
-              Hacker&apos;s Unity
-            </span>
+            <TextType
+              text="Hacker's Unity"
+              as="span"
+              className="block text-white font-heading"
+              typingSpeed={100}
+              showCursor={true}
+              cursorCharacter="|"
+              cursorClassName="text-primary-400"
+              loop={false}
+              initialDelay={500}
+            />
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
             Join our vibrant community of passionate developers, designers, and tech enthusiasts. 
             Learn, build, and grow together through hackathons, workshops, and collaborative projects.
           </p>
@@ -88,7 +97,7 @@ export default function Hero() {
             {[
               { value: "500+", label: "Community Members" },
               { value: "15+", label: "Events Hosted" },
-              { value: "8+", label: "Projects Completed" },
+              // { value: "8+", label: "Projects Completed" },
               { value: "3+", label: "Partner Companies" },
             ].map((stat, index) => (
               <div key={index} className="text-center">

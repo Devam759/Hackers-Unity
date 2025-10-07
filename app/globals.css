@@ -32,24 +32,24 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
+    --card: 0 0% 0%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
+    --popover: 0 0% 0%;
     --popover-foreground: 0 0% 98%;
     --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 5%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
+    --muted: 0 0% 10%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
+    --accent: 0 0% 10%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
+    --border: 0 0% 10%;
+    --input: 0 0% 10%;
     --ring: 0 0% 83.1%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -59,12 +59,13 @@
   }
 
   body {
-    @apply bg-gray-900 text-gray-100;
+    @apply bg-black text-gray-100;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   html {
     scroll-behavior: smooth;
+    @apply bg-black;
   }
 }
 
@@ -82,27 +83,27 @@
   }
 
   .card {
-    @apply bg-gray-800 rounded-xl shadow-lg border border-gray-700 p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+    @apply bg-black rounded-xl shadow-lg border border-gray-800 p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
   }
 
   .glassmorphism {
-    @apply bg-gray-900/90 backdrop-blur-lg;
+    @apply bg-black/90 backdrop-blur-lg;
   }
 
   .section-container {
-    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16;
   }
 
   .heading-xl {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight font-heading;
   }
 
   .heading-lg {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight font-heading;
   }
 
   .heading-md {
-    @apply text-2xl md:text-3xl font-bold tracking-tight;
+    @apply text-2xl md:text-3xl font-bold tracking-tight font-heading;
   }
 
   .skip-link {
@@ -120,7 +121,11 @@
   }
 
   .bg-gradient-subtle {
-    @apply bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800;
+    @apply bg-gradient-to-br from-black via-black to-gray-900;
+  }
+
+  .shadow-input {
+    box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);
   }
 }
 

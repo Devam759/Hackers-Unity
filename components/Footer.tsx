@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 const navigation = {
   community: [
@@ -12,7 +13,6 @@ const navigation = {
   ],
   resources: [
     { name: "Events", href: "#events" },
-    { name: "Team", href: "#team" },
     { name: "Gallery", href: "#gallery" },
   ],
   social: [
@@ -65,12 +65,14 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20 xl:px-32 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+    <footer className="relative text-gray-300 overflow-hidden" aria-labelledby="footer-heading">
+      <BackgroundBeamsWithCollision>
+        <div className="w-full">
+          <h2 id="footer-heading" className="sr-only">
+            Footer
+          </h2>
+          <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20 xl:px-32 py-12 lg:py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="inline-block">
@@ -162,12 +164,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
+        <div className="mt-12 pt-8 border-t border-gray-700/50">
           <p className="text-sm text-center text-gray-400">
             &copy; {new Date().getFullYear()} Hacker&apos;s Unity. All rights reserved.
           </p>
         </div>
       </div>
+        </div>
+      </BackgroundBeamsWithCollision>
     </footer>
   );
 }

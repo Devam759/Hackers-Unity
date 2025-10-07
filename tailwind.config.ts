@@ -76,6 +76,11 @@ const config: Config = {
   				'var(--font-inter)',
   				'system-ui',
   				'sans-serif'
+  			],
+  			heading: [
+  				'var(--font-space-grotesk)',
+  				'system-ui',
+  				'sans-serif'
   			]
   		},
   		container: {

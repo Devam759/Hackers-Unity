@@ -22,7 +22,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
   const others = projects.slice(2, 5);
 
   return (
-    <section id="projects" className="py-20 md:py-28 bg-gray-900">
+    <section id="projects" className="py-12 md:py-16 bg-black">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20 xl:px-32">
         <motion.div
           className="max-w-3xl mb-12"
@@ -45,7 +45,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
           {featured.map((project, index) => (
             <motion.article
               key={project.id}
-              className="bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-700 hover:shadow-xl transition-shadow"
+              className="bg-black rounded-2xl p-8 shadow-lg border border-gray-800 hover:shadow-xl transition-shadow"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -75,7 +75,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-3 py-1.5 text-sm font-medium rounded-lg bg-gray-700 text-gray-300"
+                    className="px-3 py-1.5 text-sm font-medium rounded-lg bg-gray-800 text-gray-300"
                   >
                     {tag}
                   </span>
@@ -114,7 +114,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
             {others.map((project, index) => (
               <motion.article
                 key={project.id}
-                className="bg-gray-800/50 rounded-xl p-6 hover:bg-gray-800 transition-colors"
+              className="bg-black/50 rounded-xl p-6 hover:bg-gray-950 transition-colors"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -140,7 +140,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-2.5 py-1 text-xs font-medium rounded bg-gray-700 text-gray-300"
+                          className="px-2.5 py-1 text-xs font-medium rounded bg-gray-800 text-gray-300"
                         >
                           {tag}
                         </span>
