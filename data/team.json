@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Jha Suraj Kumar",
+    "role": "Founder",
+    "handle": "jhasurajkumar",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Tech entrepreneur with experience in building communities and organizing 15+ hackathons and 50+ Technical Workshops",
+    "isFounder": true
+  },
+  {
+    "id": 2,
+    "name": "Chinmay Bhatt",
+    "role": "Co-Founder",
+    "handle": "chinmaybhatt",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Tech entrepreneur with experience in organizing 4+ hackathons and 5+ Technical Workshops",
+    "isFounder": true
+  },
+  {
+    "id": 3,
+    "name": "Mohit Sharma",
+    "role": "Outreach and Partnership",
+    "handle": "mohitsharma",
+    "image": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Connects with colleges, communities, and potential partners to grow reach and build collaborations."
+  },
+  {
+    "id": 4,
+    "name": "Aditya Dahuja",
+    "role": "Tech Dev Team",
+    "handle": "adityadahuja",
+    "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces",
+    "status": "Busy",
+    "description": "Develops and maintains the website, platforms, and event tech infrastructure."
+  },
+  {
+    "id": 5,
+    "name": "Kashish Jangid",
+    "role": "Community Manager",
+    "handle": "kashishjangid",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Community builder with experience in organizing tech events and hackathons."
+  },
+  {
+    "id": 6,
+    "name": "Lokesh Tak",
+    "role": "Sponsorship Outreaching",
+    "handle": "lokeshtak",
+    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces",
+    "status": "Away",
+    "description": "Event planning specialist with a passion for creating memorable tech gatherings."
+  },
+  {
+    "id": 7,
+    "name": "Mousam",
+    "role": "Design & Media",
+    "handle": "mousam",
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Backend specialist with expertise in scalable architecture and database optimization."
+  },
+  {
+    "id": 8,
+    "name": "Bhavya Jain",
+    "role": "Design and Media Team",
+    "handle": "bhavyajain",
+    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Frontend expert focused on creating responsive and accessible user interfaces."
+  },
+  {
+    "id": 9,
+    "name": "Muskan Raj",
+    "role": "Documentation",
+    "handle": "muskanraj",
+    "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=faces",
+    "status": "Busy",
+    "description": "Infrastructure specialist with experience in CI/CD pipelines and cloud platforms."
+  },
+  {
+    "id": 10,
+    "name": "Yash Verma",
+    "role": "Sponsorship Outreaching",
+    "handle": "yashverma",
+    "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Creative designer with a passion for creating beautiful and intuitive interfaces."
+  },
+  {
+    "id": 11,
+    "name": "Jyoti",
+    "role": "Design & Media",
+    "handle": "jyoti",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Mobile app specialist with expertise in React Native and cross-platform development."
+  },
+  {
+    "id": 12,
+    "name": "Awantika Jaiswal",
+    "role": "Content & Media",
+    "handle": "awantikajaiswal",
+    "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Content expert focused on creating engaging and informative technical content."
+  },
+  {
+    "id": 13,
+    "name": "Aryan Jangir",
+    "role": "Outreaching",
+    "handle": "aryanjangir",
+    "image": "https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=400&h=400&fit=crop&crop=faces",
+    "status": "Away",
+    "description": "Data specialist with expertise in machine learning and predictive analytics."
+  },
+  {
+    "id": 14,
+    "name": "Palak Sahani",
+    "role": "Design & Media Team",
+    "handle": "palaksahani",
+    "image": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Quality assurance expert focused on ensuring robust and reliable software."
+  },
+  {
+    "id": 15,
+    "name": "Janvi Kochar",
+    "role": "Design and Media Team",
+    "handle": "janvikochar",
+    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Creates visuals, videos, and manages social media."
+  },
+  {
+    "id": 16,
+    "name": "Lakshya Goyal",
+    "role": "Video Editor",
+    "handle": "lakshyagoyal",
+    "image": "https://images.unsplash.com/photo-1463453091185-61582044d556?w=400&h=400&fit=crop&crop=faces",
+    "status": "Offline",
+    "description": "Product specialist focused on delivering user-centered solutions and features."
+  },
+  {
+    "id": 17,
+    "name": "Priya Mathur",
+    "role": "Content Maker",
+    "handle": "priyamathur",
+    "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Blockchain specialist with expertise in smart contracts and decentralized apps."
+  },
+  {
+    "id": 18,
+    "name": "Yashasvi Saini",
+    "role": "Content and Documentation",
+    "handle": "yashasvisaini",
+    "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Prepares event content, handles official docs, and maintains records."
+  },
+  {
+    "id": 19,
+    "name": "Shorya Pratap",
+    "role": "Outreaching",
+    "handle": "shoryapratap",
+    "image": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop&crop=faces",
+    "status": "Away",
+    "description": "AI specialist with expertise in natural language processing and computer vision."
+  },
+  {
+    "id": 20,
+    "name": "Yogita Chugh",
+    "role": "Sponsorship & Finance",
+    "handle": "yogitachugh",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "User experience researcher focused on understanding user needs and behaviors."
+  },
+  {
+    "id": 21,
+    "name": "Saksham Jain",
+    "role": "Video Editor",
+    "handle": "sakshamjain",
+    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces",
+    "status": "Busy",
+    "description": "Documentation specialist with a talent for explaining complex technical concepts."
+  },
+  {
+    "id": 22,
+    "name": "Krishna Gupta",
+    "role": "Event Management",
+    "handle": "krishnagupta",
+    "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Oversees planning, scheduling, and smooth execution of the entire event."
+  },
+  {
+    "id": 23,
+    "name": "Priyanshu Kumar",
+    "role": "Tech Dev Team",
+    "handle": "priyanshukumar",
+    "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop&crop=faces",
+    "status": "Online",
+    "description": "Develops and maintains the website, platforms, and event tech infrastructure."
+  }
+]
+

@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "name": "DevHub",
+    "description": "A modern developer portfolio and project showcase platform built with Next.js and Tailwind CSS. Features authentication, analytics, and custom themes.",
+    "stars": 342,
+    "tags": ["Next.js", "TypeScript", "Tailwind"],
+    "repoUrl": "https://github.com/hackersunity/devhub",
+    "demoUrl": "https://devhub-demo.vercel.app"
+  },
+  {
+    "id": 2,
+    "name": "CodeCollab",
+    "description": "Real-time collaborative code editor with video chat and whiteboard. Perfect for pair programming and technical interviews.",
+    "stars": 567,
+    "tags": ["React", "WebRTC", "Socket.io"],
+    "repoUrl": "https://github.com/hackersunity/codecollab",
+    "demoUrl": "https://codecollab.dev"
+  },
+  {
+    "id": 3,
+    "name": "API Guardian",
+    "description": "Open-source API rate limiting and security middleware for Node.js applications. Supports Redis, JWT, and custom rules.",
+    "stars": 234,
+    "tags": ["Node.js", "Redis", "Security"],
+    "repoUrl": "https://github.com/hackersunity/api-guardian"
+  },
+  {
+    "id": 4,
+    "name": "LearnPath",
+    "description": "Personalized learning path generator using AI. Get customized roadmaps for any tech skill with curated resources and milestones.",
+    "stars": 891,
+    "tags": ["Python", "AI/ML", "FastAPI"],
+    "repoUrl": "https://github.com/hackersunity/learnpath",
+    "demoUrl": "https://learnpath.ai"
+  },
+  {
+    "id": 5,
+    "name": "EventHub",
+    "description": "Community event management platform with RSVP, ticketing, and live streaming integration. Used by 50+ tech communities.",
+    "stars": 445,
+    "tags": ["React", "Express", "MongoDB"],
+    "repoUrl": "https://github.com/hackersunity/eventhub",
+    "demoUrl": "https://eventhub-app.com"
+  },
+  {
+    "id": 6,
+    "name": "CLI Toolkit",
+    "description": "Collection of developer productivity CLI tools for project scaffolding, git workflows, and automation. 10k+ weekly downloads.",
+    "stars": 1289,
+    "tags": ["Node.js", "CLI", "DevTools"],
+    "repoUrl": "https://github.com/hackersunity/cli-toolkit"
+  }
+]
+
